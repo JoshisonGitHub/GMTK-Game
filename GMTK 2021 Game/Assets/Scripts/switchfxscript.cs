@@ -6,6 +6,7 @@ public class switchfxscript : MonoBehaviour
 {
     public AudioClip switchClip;
     public Transform cameraTransform;
+    public shake_camera shake_Camera;
 
     void Start()
     {
@@ -17,6 +18,7 @@ public class switchfxscript : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Q))
         {
             AudioSource.PlayClipAtPoint(switchClip, cameraTransform.position);
+            shake_Camera.CamShake();
         }
     }
 }
