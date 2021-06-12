@@ -345,6 +345,7 @@
 "Assets/Scripts/black_right_script.cs"
 "Assets/Scripts/platformercontroller.cs"
 "Assets/Scripts/stealthcontroller.cs"
+"Assets/Scripts/switchfxscript.cs"
 -langversion:8.0
 
 /deterministic
