@@ -347,6 +347,7 @@
 "Assets/Scripts/black_left_script.cs"
 "Assets/Scripts/black_right_script.cs"
 "Assets/Scripts/platformercontroller.cs"
+"Assets/Scripts/shake_camera.cs"
 "Assets/Scripts/stealthcontroller.cs"
 "Assets/Scripts/switchfxscript.cs"
 -langversion:8.0

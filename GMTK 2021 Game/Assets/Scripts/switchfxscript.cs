@@ -6,9 +6,7 @@ public class switchfxscript : MonoBehaviour
 {
     public AudioClip switchClip;
     public Transform cameraTransform;
-
-    public float stopQtime;
-    private bool canpressQ = true;
+    public shake_camera shake_Camera;
 
     void Start()
     {
@@ -17,19 +15,10 @@ public class switchfxscript : MonoBehaviour
 
     void Update()
     {
-        
-            if (Input.GetKeyDown(KeyCode.Q) && canpressQ)
-            {
-                AudioSource.PlayClipAtPoint(switchClip, cameraTransform.position);
-                canpressQ = false;
-                StartCoroutine(Reset());            
-            }
-        
-    }
-
-    private IEnumerator Reset()
-    {
-        yield return new WaitForSeconds(stopQtime);
-        canpressQ = true;
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            AudioSource.PlayClipAtPoint(switchClip, cameraTransform.position);
+            shake_Camera.CamShake();
+        }
     }
 }
