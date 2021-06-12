@@ -17,6 +17,9 @@ public class stealthcontroller : MonoBehaviour
     
     public LayerMask whatIsGround;
 
+
+    public float stopQtime;
+    private bool canpressQ = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,13 +53,20 @@ public class stealthcontroller : MonoBehaviour
     }
     void Update()
     {
+        if(rb.velocity.y >= 2.7)
+        {
+            rb.gravityScale = (float)2.7;
+        }
         
-
-        if (Input.GetKeyDown(KeyCode.Q))
+        
+        if (Input.GetKeyDown(KeyCode.Q) && canpressQ)
         {
             isonscreen = !isonscreen;
+            canpressQ = false;
+            StartCoroutine(Reset());
         }
-        Debug.Log(isonscreen);
+        
+        //Debug.Log(isonscreen);
     }
 
 
@@ -65,5 +75,11 @@ public class stealthcontroller : MonoBehaviour
     {
         facingRight = !facingRight;
         transform.Rotate(0f, 180f, 0f);
+    }
+
+    private IEnumerator Reset()
+    {
+        yield return new WaitForSeconds(stopQtime);
+        canpressQ = true;
     }
 }

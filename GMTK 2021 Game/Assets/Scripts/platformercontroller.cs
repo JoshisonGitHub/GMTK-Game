@@ -18,7 +18,9 @@ public class platformercontroller : MonoBehaviour
     public Transform GroundCheck;
     public float checkRadius;
     public LayerMask whatIsGround;
-    
+
+    public float stopQtime;
+    private bool canpressQ = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -61,11 +63,15 @@ public class platformercontroller : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            isonscreen = !isonscreen;
-        }
-        Debug.Log(isonscreen);
+        
+            if (Input.GetKeyDown(KeyCode.Q) && canpressQ)
+            {
+                isonscreen = !isonscreen;
+                canpressQ = false;
+                StartCoroutine(Reset());
+            }
+        
+        //Debug.Log(isonscreen);
     }
 
 
@@ -74,5 +80,11 @@ public class platformercontroller : MonoBehaviour
     {
         facingRight = !facingRight;
         transform.Rotate(0f, 180f, 0f);
+    }
+
+    private IEnumerator Reset()
+    {
+        yield return new WaitForSeconds(stopQtime);
+        canpressQ = true;
     }
 }
