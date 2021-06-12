@@ -8,6 +8,7 @@ public class platformercontroller : MonoBehaviour
 {
     public Rigidbody2D rb;
     private bool isonscreen = true;
+    private bool isclimbing = false;
 
     public float speed;
     public float jumpForce;
@@ -54,10 +55,16 @@ public class platformercontroller : MonoBehaviour
     {
         if (isonscreen)
         {
+            if(!isclimbing){
             
-            if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true || Input.GetKeyDown(KeyCode.W) && isGrounded == true)
-            {
-                rb.velocity = Vector2.up * jumpForce;
+                if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
+                {
+                    rb.velocity = Vector2.up * jumpForce;
+                }
+            }
+            else{
+                rb.gravityScale = 0;
+                
             }
         }
 
@@ -74,5 +81,18 @@ public class platformercontroller : MonoBehaviour
     {
         facingRight = !facingRight;
         transform.Rotate(0f, 180f, 0f);
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        if(other.gameObject.tag == "Climbable" && Input.GetKeyDown(KeyCode.W))
+        {
+            this.isclimbing = true;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D other) {
+        if(other.gameObject.tag == "Climbable")
+        {
+            this.isclimbing = false;
+        }
     }
 }
