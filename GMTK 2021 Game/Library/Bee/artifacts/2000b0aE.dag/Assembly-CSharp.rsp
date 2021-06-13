@@ -333,6 +333,7 @@
 "Assets/Scripts/door_Button_script.cs"
 "Assets/Scripts/guardscript.cs"
 "Assets/Scripts/movingplatform_script.cs"
+"Assets/Scripts/MusicController.cs"
 "Assets/Scripts/platformercontroller.cs"
 "Assets/Scripts/pressure_plate_left_script.cs"
 "Assets/Scripts/pressure_plate_manager_script.cs"
