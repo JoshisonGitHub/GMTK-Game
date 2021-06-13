@@ -19,8 +19,11 @@ public class guardscript : MonoBehaviour
 
     private bool hasseenplayer = false;
     private float originalspeed;
+
+    private stealthcontroller script;
     void Start()
     {
+        script = player.GetComponent<stealthcontroller>();
         originalspeed = speed;
     }
 
@@ -72,6 +75,7 @@ public class guardscript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D cap)
     {
+
         if (cap.gameObject.Equals(player))
         {
             Debug.Log("found player");

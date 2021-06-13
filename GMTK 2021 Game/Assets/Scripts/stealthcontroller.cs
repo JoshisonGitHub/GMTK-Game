@@ -30,6 +30,9 @@ public class stealthcontroller : MonoBehaviour
 
     public bool ishidden = false;
     private bool canhide = false;
+
+    public CapsuleCollider2D cap;
+    public BoxCollider2D box;
     // Start is called before the first frame update
     void Start()
     {
@@ -58,13 +61,7 @@ public class stealthcontroller : MonoBehaviour
                 rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
             }
             
-            if (canhide)
-            {
-                if (Input.GetKey(KeyCode.Space))
-                {
-                    ishidden = true;
-                }
-            }
+            
             
         }
 
@@ -114,11 +111,26 @@ public class stealthcontroller : MonoBehaviour
         //Debug.Log("ishidden: " + ishidden);
         //Debug.Log(isonscreen);
 
-        if (ishidden && Input.GetKeyDown(KeyCode.Space))
+        if (isonscreen)
         {
+            if (canhide)
+            {
+                if (Input.GetKeyDown(KeyCode.E) && !ishidden)
+                {
+                    ishidden = true;
+                    cap.enabled = false;
+                    box.enabled = false;
+                    rb.constraints = RigidbodyConstraints2D.FreezePosition;
+                }
+            }
 
-            ishidden = false;
-
+            if (ishidden && Input.GetKeyDown(KeyCode.Space))
+            {
+                ishidden = false;
+                cap.enabled = true;
+                box.enabled = true;
+                rb.constraints = RigidbodyConstraints2D.None;
+            }
         }
     }
 
