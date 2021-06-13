@@ -348,10 +348,7 @@
 "Assets/Scripts/black_right_script.cs"
 "Assets/Scripts/Camera_script.cs"
 "Assets/Scripts/door_Button_script.cs"
-<<<<<<< HEAD
-=======
 "Assets/Scripts/guardscript.cs"
->>>>>>> patrolling-guards
 "Assets/Scripts/movingplatform_script.cs"
 "Assets/Scripts/platformercontroller.cs"
 "Assets/Scripts/pressure_plate_left_script.cs"
