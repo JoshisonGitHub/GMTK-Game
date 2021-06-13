@@ -1,37 +1,46 @@
 Using pre-set license
 Built from '2021.1/staging' branch; Version is '2021.1.11f1 (4d8c25f7477e) revision 5082149'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19041.1052; Version 2004; 64bit' Language: 'en' Physical Memory: 32705 MB
+OS: 'Windows 10 Home; OS build 19043.1052; Version 2009; 64bit' Language: 'en' Physical Memory: 32695 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-D:\Joshu\Documents\Unity downloads\2021.1.11f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2021.1.11f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/Joshu/Documents/GMTK Game/GMTK 2021 Game
+C:/UnityProjects/GMTK2021/GMTK 2021 Game
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< HEAD
 52155
 Successfully changed project path to: D:/Joshu/Documents/GMTK Game/GMTK 2021 Game
 D:/Joshu/Documents/GMTK Game/GMTK 2021 Game
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 117.60 ms, found 4 plugins.
+=======
+59997
+Successfully changed project path to: C:/UnityProjects/GMTK2021/GMTK 2021 Game
+C:/UnityProjects/GMTK2021/GMTK 2021 Game
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 88.27 ms, found 4 plugins.
+>>>>>>> level-design
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.11f1 (4d8c25f7477e)
-[Subsystems] Discovering subsystems at path D:/Joshu/Documents/Unity downloads/2021.1.11f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Joshu/Documents/GMTK Game/GMTK 2021 Game/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/UnityProjects/GMTK2021/GMTK 2021 Game/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
+    Renderer: NVIDIA GeForce RTX 3070 (ID=0x2484)
     Vendor:   NVIDIA
-    VRAM:     8088 MB
-    Driver:   27.21.14.6089
+    VRAM:     8043 MB
+    Driver:   27.21.14.6589
 Initialize mono
+<<<<<<< HEAD
 Mono path[0] = 'D:/Joshu/Documents/Unity downloads/2021.1.11f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Joshu/Documents/Unity downloads/2021.1.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Joshu/Documents/Unity downloads/2021.1.11f1/Editor/Data/MonoBleedingEdge/etc'
@@ -50,11 +59,32 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (1245ms)
 		BeginReloadAssembly (55ms)
+=======
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.11f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56120
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001799 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 88.88 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.039 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1039ms)
+		BeginReloadAssembly (44ms)
+>>>>>>> level-design
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< HEAD
 		EndReloadAssembly (508ms)
 			LoadAssemblies (54ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -69,18 +99,39 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (1ms)
 				ProcessInitializeOnLoadAttributes (98ms)
 				ProcessInitializeOnLoadMethodAttributes (31ms)
+=======
+		EndReloadAssembly (384ms)
+			LoadAssemblies (42ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (128ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (196ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (89ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (77ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+>>>>>>> level-design
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.004785 seconds.
+=======
+Registered in 0.005542 seconds.
+>>>>>>> level-design
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Joshu\Documents\GMTK Game\GMTK 2021 Game\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Joshu\Documents\GMTK Game\GMTK 2021 Game\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\UnityProjects\GMTK2021\GMTK 2021 Game\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\UnityProjects\GMTK2021\GMTK 2021 Game\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
+<<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 109.67 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
@@ -88,10 +139,20 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (1324ms)
 		BeginReloadAssembly (161ms)
+=======
+Refreshing native plugins compatible for Editor in 88.64 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.046 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1046ms)
+		BeginReloadAssembly (121ms)
+>>>>>>> level-design
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 			CreateAndSetChildDomain (22ms)
 		EndReloadAssembly (1093ms)
 			LoadAssemblies (96ms)
@@ -100,9 +161,20 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (62ms)
 			SetupLoadedEditorAssemblies (481ms)
+=======
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (875ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (289ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (386ms)
+>>>>>>> level-design
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
+<<<<<<< HEAD
 				RefreshPlugins (110ms)
 				BeforeProcessingInitializeOnLoad (88ms)
 				ProcessInitializeOnLoadAttributes (260ms)
@@ -116,13 +188,32 @@ Platform modules already initialized, skipping
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
 Refreshing native plugins compatible for Editor in 0.76 ms, found 4 plugins.
+=======
+				RefreshPlugins (89ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (197ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.68 ms, found 4 plugins.
+>>>>>>> level-design
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3832 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 142.2 MB.
-System memory in use after: 142.2 MB.
+System memory in use after: 142.3 MB.
 
 Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 4276.
+<<<<<<< HEAD
 Total: 3.004900 ms (FindLiveObjects: 0.330900 ms CreateObjectMapping: 0.298400 ms MarkObjects: 2.236200 ms  DeleteObjects: 0.138500 ms)
+=======
+Total: 2.297800 ms (FindLiveObjects: 0.294600 ms CreateObjectMapping: 0.089800 ms MarkObjects: 1.814800 ms  DeleteObjects: 0.097600 ms)
+>>>>>>> level-design
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,12 +222,12 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
   path: Assets/Materials/slippery.physicsMaterial2D
   artifactKey: Guid(b467b7949d090634d8132f6ba1df1ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Materials/slippery.physicsMaterial2D using Guid(b467b7949d090634d8132f6ba1df1ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ffd5fbc5ac5e5b028ad3e2c3b4e2538') in 0.040151 seconds 
@@ -170,4 +261,260 @@ Received Import Request.
   path: Assets/Art
   artifactKey: Guid(ed23e17faeaa46849b906b049609b0bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Art using Guid(ed23e17faeaa46849b906b049609b0bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d180ec53325514bff10c1ebb9c0defa') in 0.002596 seconds 
+=======
+  path: Assets/Door_Button Pair 1.prefab
+  artifactKey: Guid(11e6a5c5489e5124d83ada1fdbf55f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Door_Button Pair 1.prefab using Guid(11e6a5c5489e5124d83ada1fdbf55f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c5da22f39596b07f6e0c1f1ab2a0e51') in 0.073046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.357240 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(131a6b21c8605f84396be9f6751fb6e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(131a6b21c8605f84396be9f6751fb6e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df75b7d1a31c5b4f73fd45661b403b04') in 0.001927 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.761571 seconds.
+  path: Assets/Scenes/New Scene.unity
+  artifactKey: Guid(dddbcf737019b4740b829ba537dc1656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/New Scene.unity using Guid(dddbcf737019b4740b829ba537dc1656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43342926e6df2b20b9cc8dcca775b3e4') in 0.006098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.592179 seconds.
+  path: Assets/Scenes/Final Scene.unity
+  artifactKey: Guid(dddbcf737019b4740b829ba537dc1656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Final Scene.unity using Guid(dddbcf737019b4740b829ba537dc1656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4d88a81993f05a65590160a307ae109') in 0.005318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 160.896833 seconds.
+  path: Assets/Sprites
+  artifactKey: Guid(443650f9382baf649bb8a066be20b28d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites using Guid(443650f9382baf649bb8a066be20b28d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bee3436171683964c99cf4a0a4c3582') in 0.005369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.067706 seconds.
+  path: Assets/Sprites/download (4).png
+  artifactKey: Guid(e2d2fcb9bb656c7438c25f5faafce9eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/download (4).png using Guid(e2d2fcb9bb656c7438c25f5faafce9eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '680b03f17144661402ffc4a73f530a25') in 0.046299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.205845 seconds.
+  path: Assets/Sprites/oli_gamejam_sprites
+  artifactKey: Guid(37f22d460341a324aa26e4a9a197fc72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/oli_gamejam_sprites using Guid(37f22d460341a324aa26e4a9a197fc72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6c6dab4620ee57d2270f863cca6021f') in 0.005023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.888534 seconds.
+  path: Assets/Sprites/oli_gamejam_sprites/Sprite-0013 copy.aseprite
+  artifactKey: Guid(80e6d2d2d7a5026499311e0a88e3e763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/oli_gamejam_sprites/Sprite-0013 copy.aseprite using Guid(80e6d2d2d7a5026499311e0a88e3e763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c61e3133dc612edcf87fd3381f93244') in 0.006840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.236699 seconds.
+  path: Assets/Sprites/oli_gamejam_sprites/left
+  artifactKey: Guid(af94e14ca589d0a43a88083792e18cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/oli_gamejam_sprites/left using Guid(af94e14ca589d0a43a88083792e18cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8452eb4f6e11608ece3a570a012159b0') in 0.005494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.037411 seconds.
+  path: Assets/Sprites/oli_gamejam_sprites/left/left fg
+  artifactKey: Guid(ca097188dacb41749a7488f13ae9705c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/oli_gamejam_sprites/left/left fg using Guid(ca097188dacb41749a7488f13ae9705c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc3a1f8c74fad0cf4e85c78e1931c56c') in 0.005371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.056844 seconds.
+  path: Assets/Sprites/oli_gamejam_sprites/left/left fg/block_full.png
+  artifactKey: Guid(9755231e8b00ec74ea13b07e800b9381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/oli_gamejam_sprites/left/left fg/block_full.png using Guid(9755231e8b00ec74ea13b07e800b9381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8059df44cbe463e14f2f32070eaf349e') in 0.010989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/Sprites/oli_gamejam_sprites/left/left fg/block_half.png
+  artifactKey: Guid(432c81e08bc2af04f85f50c337ecbf24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/oli_gamejam_sprites/left/left fg/block_half.png using Guid(432c81e08bc2af04f85f50c337ecbf24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb75d97960d2e710509a98eff88ddc41') in 0.021856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.186418 seconds.
+  path: Assets/Scenes/Oliver Test Scene.unity
+  artifactKey: Guid(eca8b62e7f256314fae2cd90384c4744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Oliver Test Scene.unity using Guid(eca8b62e7f256314fae2cd90384c4744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc35e9ac25a8aca8feddb9b6eb50443a') in 0.005579 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.684631 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(1e834b23ec771e042ad9a349b49cf392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(1e834b23ec771e042ad9a349b49cf392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e72ee0375259bbe0d48ca21da9ffffad') in 0.002437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.058956 seconds.
+  path: Assets/Prefabs/Guard.prefab
+  artifactKey: Guid(874fc07ac7bbf864da2c4dc2562d6fef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guard.prefab using Guid(874fc07ac7bbf864da2c4dc2562d6fef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba7e43ef4af89415aa23f70573a0a7d4') in 0.012300 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.162545 seconds.
+  path: Assets/Prefabs/Table.prefab
+  artifactKey: Guid(7e3db1b4e0bcbb44ab5f5f4ab4b72eb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Table.prefab using Guid(7e3db1b4e0bcbb44ab5f5f4ab4b72eb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34c8e103f48cc39b9440efc4325cb604') in 0.008904 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.708715 seconds.
+  path: Assets/Scenes/Final Scene.unity
+  artifactKey: Guid(dddbcf737019b4740b829ba537dc1656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Final Scene.unity using Guid(dddbcf737019b4740b829ba537dc1656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bd8f7aa6dd6f6d5b6b6d124dd63f6ff') in 0.005118 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 48.877348 seconds.
+  path: Assets/Sprites/oli_gamejam_sprites/left/left fg/block_full.asset
+  artifactKey: Guid(043e5175f8b8cb24d81483353e6f9664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/oli_gamejam_sprites/left/left fg/block_full.asset using Guid(043e5175f8b8cb24d81483353e6f9664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65fee76175cefe5cea004157a4231743') in 0.015765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 161.727877 seconds.
+  path: Assets/Scenes/Ground.prefab
+  artifactKey: Guid(2668efc1ee85c614f8a490b476743ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Ground.prefab using Guid(2668efc1ee85c614f8a490b476743ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aea7c22c0ed4cd70868576ca2d15491') in 0.007305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 78.795937 seconds.
+  path: Assets/Sprites/oli_gamejam_sprites/right
+  artifactKey: Guid(4d9acb8329a20394586cd07cc67b4200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/oli_gamejam_sprites/right using Guid(4d9acb8329a20394586cd07cc67b4200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20165c68aaaadae2006bf1903d670b3c') in 0.005806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.013339 seconds.
+  path: Assets/Sprites/oli_gamejam_sprites/right/right bg
+  artifactKey: Guid(389bfae1e396c49429300419d47e9c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/oli_gamejam_sprites/right/right bg using Guid(389bfae1e396c49429300419d47e9c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b632f40e61c5e63acdc23df25fd88139') in 0.005877 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.069773 seconds.
+  path: Assets/Sprites/oli_gamejam_sprites/right/right bg/bee.png
+  artifactKey: Guid(8ec43bf36d2642d42be67342a439e489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/oli_gamejam_sprites/right/right bg/bee.png using Guid(8ec43bf36d2642d42be67342a439e489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc0644aeaebfdfdc7a1844ad404f771c') in 0.019439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/Sprites/oli_gamejam_sprites/right/right bg/sus_vent.png
+  artifactKey: Guid(6f68d3c8c9b0ac24fb2974f0b074e28a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/oli_gamejam_sprites/right/right bg/sus_vent.png using Guid(6f68d3c8c9b0ac24fb2974f0b074e28a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecd0524bd36ac1b9389b92fafc6481f2') in 0.010758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Sprites/oli_gamejam_sprites/right/right bg/metal_sheet.png
+  artifactKey: Guid(c33a236e5fa433544ad61f2943b90591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/oli_gamejam_sprites/right/right bg/metal_sheet.png using Guid(c33a236e5fa433544ad61f2943b90591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4d3a1ee6af09a7ab4151321852d2443') in 0.011661 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 95.581963 seconds.
+  path: Assets/Sprites/oli_gamejam_sprites/right/right bg/Background.prefab
+  artifactKey: Guid(fad215e5b6af1d348a47342f26bffa07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/oli_gamejam_sprites/right/right bg/Background.prefab using Guid(fad215e5b6af1d348a47342f26bffa07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe742c912315daade10eca09ea78ab21') in 0.007341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.759644 seconds.
+  path: Assets/Sprites/oli_gamejam_sprites/right/right bg/Background.prefab
+  artifactKey: Guid(fad215e5b6af1d348a47342f26bffa07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/oli_gamejam_sprites/right/right bg/Background.prefab using Guid(fad215e5b6af1d348a47342f26bffa07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bddce2f997f7fabeacb1bf72d393154b') in 0.003617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Sprites/oli_gamejam_sprites/right/right bg/metal_sheet.asset
+  artifactKey: Guid(e257793ddd0c2084cb452e03719931b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/oli_gamejam_sprites/right/right bg/metal_sheet.asset using Guid(e257793ddd0c2084cb452e03719931b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eede313f0111f7a1a16b0981d03b0c2') in 0.012903 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 115.317815 seconds.
+  path: Assets/Sprites/oli_gamejam_sprites/right/right bg/Background.prefab
+  artifactKey: Guid(fad215e5b6af1d348a47342f26bffa07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/oli_gamejam_sprites/right/right bg/Background.prefab using Guid(fad215e5b6af1d348a47342f26bffa07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41c5886d6c09c6c95db62ad8f0dcb8e2') in 0.003729 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004802 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\UnityProjects\GMTK2021\GMTK 2021 Game\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\UnityProjects\GMTK2021\GMTK 2021 Game\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.932 seconds
+Domain Reload Profiling:
+	ReloadAssembly (933ms)
+		BeginReloadAssembly (113ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (758ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (291ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (258ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (57ms)
+				ProcessInitializeOnLoadAttributes (184ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.70 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3831 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.6 MB.
+System memory in use after: 149.7 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 4386.
+Total: 2.515900 ms (FindLiveObjects: 0.270800 ms CreateObjectMapping: 0.088800 ms MarkObjects: 2.055700 ms  DeleteObjects: 0.099800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 267.015700 seconds.
+  path: Assets/Sprites/oli_gamejam_sprites/left/left fg/block_full.png
+  artifactKey: Guid(9755231e8b00ec74ea13b07e800b9381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/oli_gamejam_sprites/left/left fg/block_full.png using Guid(9755231e8b00ec74ea13b07e800b9381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12a700522180020f2403f61c7347dd31') in 0.038673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.945100 seconds.
+  path: Assets/Sprites/oli_gamejam_sprites/left/left fg/block_full.png
+  artifactKey: Guid(9755231e8b00ec74ea13b07e800b9381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/oli_gamejam_sprites/left/left fg/block_full.png using Guid(9755231e8b00ec74ea13b07e800b9381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd054b81d075316c0eef5b9983d02313') in 0.007436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.278274 seconds.
+  path: Assets/Sprites/oli_gamejam_sprites/left/left fg/block_full.png
+  artifactKey: Guid(9755231e8b00ec74ea13b07e800b9381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/oli_gamejam_sprites/left/left fg/block_full.png using Guid(9755231e8b00ec74ea13b07e800b9381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d83341f19e4a0559733b8f58882d16a') in 0.015966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.309245 seconds.
+  path: Assets/Sprites/oli_gamejam_sprites/left/left fg/block_full.png
+  artifactKey: Guid(9755231e8b00ec74ea13b07e800b9381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/oli_gamejam_sprites/left/left fg/block_full.png using Guid(9755231e8b00ec74ea13b07e800b9381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cec8727d8fdb887965c8d882bd2630e') in 0.012139 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.872680 seconds.
+  path: Assets/Sprites/oli_gamejam_sprites/left/left fg/block_full.png
+  artifactKey: Guid(9755231e8b00ec74ea13b07e800b9381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/oli_gamejam_sprites/left/left fg/block_full.png using Guid(9755231e8b00ec74ea13b07e800b9381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eb5973f3108bc98dbe5300290a501d6') in 0.013607 seconds 
+>>>>>>> level-design
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
