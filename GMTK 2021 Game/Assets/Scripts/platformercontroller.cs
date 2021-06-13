@@ -28,7 +28,7 @@ public class platformercontroller : MonoBehaviour
     public float climbspeed;
     private float inputVertical;
 
-   
+    public Animator anim;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +55,7 @@ public class platformercontroller : MonoBehaviour
             rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
             
         }
+        
 
         RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, Vector2.up, distance, whatIsLadder);
         
@@ -102,8 +103,19 @@ public class platformercontroller : MonoBehaviour
                 canpressQ = false;
                 StartCoroutine(Reset());
             }
-        
+
         //Debug.Log(isonscreen);
+        Debug.Log(moveInput);
+        if (moveInput > 1 || moveInput < -1)
+        {
+            anim.SetBool("iswalking", true);
+            anim.SetBool("isidle", false);
+        }
+        else
+        {
+            anim.SetBool("iswalking", false);
+            anim.SetBool("isidle", true);
+        }
     }
 
 
