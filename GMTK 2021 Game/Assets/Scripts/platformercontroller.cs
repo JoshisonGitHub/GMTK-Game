@@ -93,6 +93,11 @@ public class platformercontroller : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
             {
                 rb.velocity = Vector2.up * jumpForce;
+                anim.SetBool("isjumping", true);
+            }
+            else
+            {
+                anim.SetBool("isjumping", false);
             }
         }
 
@@ -106,15 +111,13 @@ public class platformercontroller : MonoBehaviour
 
         //Debug.Log(isonscreen);
         Debug.Log(moveInput);
-        if (moveInput > 1 || moveInput < -1)
+        if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
         {
             anim.SetBool("iswalking", true);
-            anim.SetBool("isidle", false);
         }
         else
         {
             anim.SetBool("iswalking", false);
-            anim.SetBool("isidle", true);
         }
     }
 
