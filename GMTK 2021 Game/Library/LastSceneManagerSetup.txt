@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/SampleScene.unity
+=======
+- path: Assets/Scenes/Oliver Test Scene.unity
+>>>>>>> patrolling-guards
   isLoaded: 1
   isActive: 1
   isSubScene: 0
