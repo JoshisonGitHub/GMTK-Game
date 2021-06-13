@@ -33,6 +33,8 @@ public class stealthcontroller : MonoBehaviour
 
     public CapsuleCollider2D cap;
     public BoxCollider2D box;
+
+    public Animator anim;
     // Start is called before the first frame update
     void Start()
     {
@@ -132,14 +134,30 @@ public class stealthcontroller : MonoBehaviour
                 rb.constraints = RigidbodyConstraints2D.None;
             }
         }
+
+        if (isonscreen)
+        {
+            if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+            {
+                anim.SetBool("iswalking", true);
+            }
+            else
+            {
+                anim.SetBool("iswalking", false);
+            }
+        }
     }
 
 
 
     void Flip()
     {
-        facingRight = !facingRight;
-        transform.Rotate(0f, 180f, 0f);
+        if (isonscreen)
+        {
+
+            facingRight = !facingRight;
+            transform.Rotate(0f, 180f, 0f);
+        }
     }
 
     private IEnumerator Reset()
