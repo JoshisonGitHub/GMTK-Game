@@ -111,13 +111,16 @@ public class platformercontroller : MonoBehaviour
 
         //Debug.Log(isonscreen);
         Debug.Log(moveInput);
-        if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        if (isonscreen)
         {
-            anim.SetBool("iswalking", true);
-        }
-        else
-        {
-            anim.SetBool("iswalking", false);
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+            {
+                anim.SetBool("iswalking", true);
+            }
+            else
+            {
+                anim.SetBool("iswalking", false);
+            }
         }
     }
 
@@ -125,8 +128,11 @@ public class platformercontroller : MonoBehaviour
 
     void Flip()
     {
-        facingRight = !facingRight;
-        transform.Rotate(0f, 180f, 0f);
+        if (isonscreen)
+        {
+            facingRight = !facingRight;
+            transform.Rotate(0f, 180f, 0f);
+        }
     }
 
     private IEnumerator Reset()
