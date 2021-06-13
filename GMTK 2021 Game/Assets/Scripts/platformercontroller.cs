@@ -27,6 +27,8 @@ public class platformercontroller : MonoBehaviour
     private bool isClimbing;
     public float climbspeed;
     private float inputVertical;
+
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -79,6 +81,8 @@ public class platformercontroller : MonoBehaviour
         {
             rb.gravityScale = (float)2.4;
         }
+
+        
     }
     void Update()
     {
@@ -115,4 +119,6 @@ public class platformercontroller : MonoBehaviour
         yield return new WaitForSeconds(stopQtime);
         canpressQ = true;
     }
+
+    
 }

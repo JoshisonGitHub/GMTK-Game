@@ -24,12 +24,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2151414468945821540}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.2, y: 1.02, z: 0}
-  m_LocalScale: {x: 1.5625, y: 0.475, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.33602688, y: -2.547706, z: -13.232506}
+  m_LocalScale: {x: 3.787879, y: 2.2352939, z: 1}
   m_Children: []
-  m_Father: {fileID: 2151414469091486063}
-  m_RootOrder: 2
+  m_Father: {fileID: 2151414470579942376}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2151414468945821541
 BoxCollider2D:
@@ -66,7 +66,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2151414469091486063}
-  - component: {fileID: 2151414469091486062}
+  - component: {fileID: 4684938809319583660}
   m_Layer: 0
   m_Name: Door_Button Pair
   m_TagString: Untagged
@@ -87,11 +87,10 @@ Transform:
   m_Children:
   - {fileID: 2151414470579942376}
   - {fileID: 2151414470541167713}
-  - {fileID: 2151414468945821562}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2151414469091486062
+--- !u!114 &4684938809319583660
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,16 +99,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2151414469091486057}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2ff2d738a620a14a8091b9c338f7bea, type: 3}
+  m_Script: {fileID: 11500000, guid: ff1076145061c594aa199a664d305314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 2151414470579942379}
   door: {fileID: 2151414470541167712}
   buttonCollider: {fileID: 2151414468945821541}
-  playerCollider: {fileID: 0}
   interactionKey: 101
   buttonFacingRight: 1
-  buttonRetractDistance: 0.02
+  buttonRetractDistance: 1
 --- !u!1 &2151414470541167712
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,7 +238,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.061389, y: 1.5613878, z: 13.232506}
   m_LocalScale: {x: 0.4125, y: 0.2125, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2151414468945821562}
   m_Father: {fileID: 2151414469091486063}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
