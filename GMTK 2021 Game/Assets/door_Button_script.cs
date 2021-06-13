@@ -15,10 +15,16 @@ public class door_Button_script : MonoBehaviour
 
     private Collider2D playerleftCollider;
     private GameObject playerleft;
+
+    private Collider2D playerrightCollider;
+    private GameObject playerright;
     void Start()
     {
         playerleft = GameObject.FindWithTag("PlayerLeft");
         playerleftCollider = playerleft.GetComponent<BoxCollider2D>();
+
+        playerright = GameObject.FindWithTag("PlayerRight");
+        playerrightCollider = playerright.GetComponent<BoxCollider2D>();
     }
 
     void Update()
@@ -28,6 +34,11 @@ public class door_Button_script : MonoBehaviour
             this.buttonPressed = true;
             RunPairAnimation();
         }
+        /*else if(!buttonPressed && Input.GetKeyDown(interactionKey) && buttonCollider.IsTouching(playerrightCollider))
+        {
+            this.buttonPressed = true;
+            RunPairAnimation();
+        }*/
     }
 
     void RunPairAnimation()

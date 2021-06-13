@@ -20,6 +20,12 @@ public class stealthcontroller : MonoBehaviour
 
     public float stopQtime;
     private bool canpressQ = true;
+
+    public LayerMask whatIsLadder;
+    public float distance;
+    private bool isClimbing;
+    public float climbspeed;
+    private float inputVertical;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,7 +53,31 @@ public class stealthcontroller : MonoBehaviour
 
         }
 
+        RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, Vector2.up, distance, whatIsLadder);
 
+        if (hitInfo.collider != null)
+        {
+            if (Input.GetKey(KeyCode.W))
+            {
+                isClimbing = true;
+            }
+
+        }
+        else
+        {
+            isClimbing = false;
+        }
+
+        if (isClimbing)
+        {
+            inputVertical = Input.GetAxisRaw("Vertical");
+            rb.velocity = new Vector2(rb.velocity.x, inputVertical * climbspeed);
+            rb.gravityScale = 0;
+        }
+        else
+        {
+            rb.gravityScale = (float)2.4;
+        }
 
 
     }
