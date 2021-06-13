@@ -26,6 +26,10 @@ public class stealthcontroller : MonoBehaviour
     private bool isClimbing;
     public float climbspeed;
     private float inputVertical;
+
+
+    public bool ishidden = false;
+    private bool canhide = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,8 +53,19 @@ public class stealthcontroller : MonoBehaviour
 
         if (isonscreen)
         {
-            rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
-
+            if (!ishidden)
+            {
+                rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+            }
+            
+            if (canhide)
+            {
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    ishidden = true;
+                }
+            }
+            
         }
 
         RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, Vector2.up, distance, whatIsLadder);
@@ -95,8 +110,16 @@ public class stealthcontroller : MonoBehaviour
             canpressQ = false;
             StartCoroutine(Reset());
         }
-        
+        //Debug.Log("canhide" + canhide);
+        //Debug.Log("ishidden: " + ishidden);
         //Debug.Log(isonscreen);
+
+        if (ishidden && Input.GetKeyDown(KeyCode.Space))
+        {
+
+            ishidden = false;
+
+        }
     }
 
 
@@ -111,5 +134,21 @@ public class stealthcontroller : MonoBehaviour
     {
         yield return new WaitForSeconds(stopQtime);
         canpressQ = true;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Table"))
+        {
+            canhide = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Table"))
+        {
+            canhide = false;
+        }
     }
 }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PlayerLeft
   - PlayerRight
+  - Table
   layers:
   - Default
   - TransparentFX
