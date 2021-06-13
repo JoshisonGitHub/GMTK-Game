@@ -19,7 +19,11 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
+<<<<<<< HEAD
   m_Title: Scene
+=======
+  m_Title: Hierarchy
+>>>>>>> music-implementation
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +52,11 @@ MonoBehaviour:
   m_MinSize: {x: 677, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 46
+=======
+  controlID: 74
+>>>>>>> music-implementation
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -225,7 +233,11 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 56
+=======
+  controlID: 45
+>>>>>>> music-implementation
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -250,7 +262,11 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 97
+=======
+  controlID: 46
+>>>>>>> music-implementation
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -268,11 +284,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 363
     y: 0
+<<<<<<< HEAD
     width: 1103
     height: 561
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
+=======
+    width: 1471
+    height: 798
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 15}
+>>>>>>> music-implementation
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
@@ -438,22 +462,36 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Materials
+=======
+    - Assets/Prefabs
+>>>>>>> music-implementation
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Materials
+=======
+  - Assets/Prefabs
+>>>>>>> music-implementation
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Joshu\Documents\GMTK Game\GMTK 2021 Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: b65b0000
     m_LastClickedID: 23478
     m_ExpandedIDs: 000000009c5b00009e5b0000a05b0000
+=======
+    m_SelectedIDs: e25a0000
+    m_LastClickedID: 23266
+    m_ExpandedIDs: 00000000c25a0000c45a0000c65a0000c85a000000ca9a3b
+>>>>>>> music-implementation
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -509,7 +547,11 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
+<<<<<<< HEAD
     m_ExpandedInstanceIDs: c6230000367c0000
+=======
+    m_ExpandedInstanceIDs: c6230000
+>>>>>>> music-implementation
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -603,9 +645,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: f85d0000
       m_LastClickedID: 24056
       m_ExpandedIDs: 50f5ffffd2faffffe05a0000
+=======
+      m_SelectedIDs: baecffff
+      m_LastClickedID: -4934
+      m_ExpandedIDs: 42fbffffce590000
+>>>>>>> music-implementation
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -667,7 +715,11 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 1.8150374, y: -2.0012982, z: -7.061274}
     speed: 2
+<<<<<<< HEAD
     m_Value: {x: 1.8150374, y: -2.0012982, z: -7.061274}
+=======
+    m_Value: {x: 0.18670218, y: 0.7468007, z: -0.5181062}
+>>>>>>> music-implementation
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -720,7 +772,11 @@ MonoBehaviour:
   m_Size:
     m_Target: 2.113553
     speed: 2
+<<<<<<< HEAD
     m_Value: 2.113553
+=======
+    m_Value: 4.3481054
+>>>>>>> music-implementation
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -765,10 +821,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 363
     y: 73
     width: 1101
     height: 540
+=======
+    x: 484
+    y: 73
+    width: 1469
+    height: 777
+>>>>>>> music-implementation
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -776,7 +839,11 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
   m_TargetSize: {x: 1101, y: 519}
+=======
+  m_TargetSize: {x: 1469, y: 756}
+>>>>>>> music-implementation
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -791,10 +858,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -550.5
     m_HBaseRangeMax: 550.5
     m_VBaseRangeMin: -259.5
     m_VBaseRangeMax: 259.5
+=======
+    m_HBaseRangeMin: -734.5
+    m_HBaseRangeMax: 734.5
+    m_VBaseRangeMin: -378
+    m_VBaseRangeMax: 378
+>>>>>>> music-implementation
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -812,16 +886,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
       width: 1101
       height: 519
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 550.5, y: 259.5}
+=======
+      width: 1469
+      height: 756
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 734.5, y: 378}
+>>>>>>> music-implementation
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -550.5
       y: -259.5
       width: 1101
@@ -829,6 +911,15 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1101, y: 540}
+=======
+      x: -734.5
+      y: -378
+      width: 1469
+      height: 756
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1469, y: 777}
+>>>>>>> music-implementation
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -854,8 +945,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2249
-    y: 726.5
-    width: 920
-    height: 250
+    x: 0
+    y: 871
+    width: 1954
+    height: 528
   m_ViewDataDictionary: {fileID: 0}

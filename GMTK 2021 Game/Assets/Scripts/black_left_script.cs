@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class black_left_script : MonoBehaviour
 {
-    private bool isonscreen = false;
+    public bool isonscreen = false;
 
     public Animator anim;
 
